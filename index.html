@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Karan Sehra | IT Professional, Cyber Security Mentor &amp; Tech Enthusiast</title>
+  <meta name="description" content="Portfolio of Karan Sehra - IT Student, Aspiring IT Professional, and Technology Enthusiast from Bulandshahr, Uttar Pradesh. Specializing in Cyber Security Mentorship, ICTSM, HTML, C, C++, Ruby, Hardware, and IT Support." />
+  
+  <!-- Modern Clean Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Live Wallpaper Animated Canvas -->
+  <canvas id="live-wallpaper"></canvas>
+  <div class="bg-vignette"></div>
+  <div class="cyber-grid-overlay"></div>
+
+  <!-- Live Wallpaper Controller Widget -->
+  <div class="wallpaper-control-panel" id="wallpaper-panel">
+    <div class="panel-header">
+      <span class="p-dot dot-red"></span>
+      <span class="p-dot dot-white"></span>
+      <span class="p-dot dot-green"></span>
+      <span class="panel-title">LIVE WALLPAPER</span>
+    </div>
+    <div class="wallpaper-btn-group">
+      <button class="wp-mode-btn active" data-mode="constellation" title="Cyber Mesh">Mesh</button>
+      <button class="wp-mode-btn" data-mode="matrix" title="Matrix Rain">Matrix</button>
+      <button class="wp-mode-btn" data-mode="particles" title="Neon Tech Orbs">Orbs</button>
+      <button class="wp-toggle-btn" id="wp-pause-btn" title="Pause / Play">&#10074;&#10074;</button>
+    </div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo">
+        <div class="logo-box">
+          <span class="logo-text">KS</span>
+        </div>
+        <div class="brand-info">
+          <span class="brand-name">Karan <span class="accent-red">Sehra</span></span>
+          <span class="brand-tag">ICTSM &bull; IT Specialist</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="#hero" class="nav-link active"><span>//</span> Home</a>
+        <a href="#about" class="nav-link"><span>//</span> About</a>
+        <a href="#education" class="nav-link"><span>//</span> Education</a>
+        <a href="#skills" class="nav-link"><span>//</span> Skills</a>
+        <a href="#objective" class="nav-link"><span>//</span> Objective</a>
+        <a href="#contact" class="nav-link"><span>//</span> Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-sm btn-outline-green">
+          <span class="pulse-indicator"></span> Connect
+        </a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        
+        <div class="hero-content">
+          <div class="status-badge">
+            <span class="status-indicator"></span>
+            <span class="status-text">Available for Opportunities &bull; Cyber Security Mentor &bull; IT Student</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Karan Sehra</span>
+          </h1>
+
+          <div class="typewriter-container">
+            <span class="type-prefix">&gt; </span>
+            <span class="typewriter-text" id="typewriter"></span>
+            <span class="cursor">&block;</span>
+          </div>
+
+          <p class="hero-bio">
+            Passionate <strong class="text-white">IT Student &amp; Aspiring IT Professional</strong> from 
+            <span class="badge-tag green-tag">Bulandshahr, Uttar Pradesh</span>. 
+            Pursuing ITI in <strong class="accent-red">ICTSM</strong> with dedicated focus on computer hardware, 
+            troubleshooting, system maintenance, and emerging technologies.
+          </p>
+
+          <blockquote class="motto-banner">
+            <div class="quote-mark">&ldquo;</div>
+            <p>Learning technology, developing skills, and building a better future through continuous improvement.</p>
+          </blockquote>
+
+          <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary-red">Get In Touch</a>
+            <a href="#skills" class="btn btn-primary-green">Explore Skills</a>
+          </div>
+
+          <!-- Quick Stat Counters -->
+          <div class="hero-stats">
+            <div class="stat-card">
+              <span class="stat-num accent-red">ICTSM</span>
+              <span class="stat-label">ITI Specialization</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num accent-green">2026</span>
+              <span class="stat-label">Certifications</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num accent-white">100%</span>
+              <span class="stat-label">Hands-On Focus</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num accent-green">UP, IN</span>
+              <span class="stat-label">Bulandshahr</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Profile Card -->
+        <div class="hero-visual">
+          <div class="profile-card-wrapper">
+            <div class="tech-profile-card">
+              <div class="card-top-bar">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-white"></span>
+                <span class="dot dot-green"></span>
+                <span class="card-id">ID: KS-ICTSM-2026</span>
+              </div>
+
+              <div class="avatar-container">
+                <div class="avatar-ring">
+                  <div class="avatar-circle">
+                    <span class="avatar-monogram">KS</span>
+                  </div>
+                </div>
+                <div class="online-beacon" title="Active"></div>
+              </div>
+
+              <div class="profile-details">
+                <h3 class="profile-name">Karan Sehra</h3>
+                <p class="profile-role">IT Student &bull; Cyber Security Mentor</p>
+                <div class="location-badge">
+                  <span>Bulandshahr, Uttar Pradesh, India</span>
+                </div>
+              </div>
+
+              <div class="card-terminal">
+                <div class="terminal-line"><span class="t-green">karan@system:~$</span> <span class="t-white">cat profile.json</span></div>
+                <div class="terminal-line t-dim">&gt; Role: Cyber Security Mentor</div>
+                <div class="terminal-line t-dim">&gt; Languages: HTML, C, C++, Ruby</div>
+                <div class="terminal-line t-dim">&gt; Course: ITI &mdash; ICTSM (1st Sem)</div>
+                <div class="terminal-line t-dim">&gt; Training: Basic &amp; Advanced (2026)</div>
+                <div class="terminal-line"><span class="t-red">karan@system:~$</span> <span class="t-green">status: "Ready to solve &amp; secure!"</span></div>
+              </div>
+
+              <div class="profile-links-pill">
+                <a href="mailto:kookoosharmaa@gmail.com" class="pill-action" title="Send Email">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                  <span>Email</span>
+                </a>
+                <a href="tel:+919548304900" class="pill-action" title="Direct Call">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                  <span>Call</span>
+                </a>
+                <a href="https://www.instagram.com/the_hacktips/" target="_blank" rel="noopener noreferrer" class="pill-action" title="The Hacktips on Instagram">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                  <span>The Hacktips</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-tag"><span class="accent-red">//</span> 01. PROFILE OVERVIEW</div>
+          <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+          <div class="title-bar">
+            <span class="bar-segment red"></span>
+            <span class="bar-segment white"></span>
+            <span class="bar-segment green"></span>
+          </div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card glass-panel">
+            <div class="card-badge red">Background</div>
+            <h3 class="about-card-title">Who I Am</h3>
+            <p class="about-card-text">
+              I am <strong>Karan Sehra</strong>, an IT student from <strong>Bulandshahr, Uttar Pradesh</strong>, with a strong interest in computer technology, IT systems, and emerging technologies.
+            </p>
+            <p class="about-card-text">
+              I am currently pursuing an ITI course in <strong>Information and Communication Technology System Maintenance (ICTSM)</strong>. I have completed my basic computer training and advanced computer training, and I am continuously working to improve my technical knowledge and practical skills.
+            </p>
+          </div>
+
+          <div class="about-card glass-panel">
+            <div class="card-badge green">Vision &amp; Target</div>
+            <h3 class="about-card-title">My Objective</h3>
+            <p class="about-card-text">
+              My goal is to develop strong IT support, computer maintenance, troubleshooting, and digital technology skills while exploring new opportunities in the technology field.
+            </p>
+            <p class="about-card-text">
+              I believe in continuous learning, practical experience, and using technology to solve real-world problems.
+            </p>
+          </div>
+
+          <div class="about-card glass-panel">
+            <div class="card-badge white">Guiding Pillars</div>
+            <h3 class="about-card-title">Core Principles</h3>
+            <div class="belief-list">
+              <div class="belief-item">
+                <span class="dot-red"></span>
+                <div>
+                  <strong>Continuous Learning</strong>
+                  <p>Keeping pace with rapid shifts in software, hardware, and AI innovations.</p>
+                </div>
+              </div>
+              <div class="belief-item">
+                <span class="dot-white"></span>
+                <div>
+                  <strong>Practical Experience</strong>
+                  <p>Real hands-on hardware handling, component diagnostic, and repairs.</p>
+                </div>
+              </div>
+              <div class="belief-item">
+                <span class="dot-green"></span>
+                <div>
+                  <strong>Real-World Solutions</strong>
+                  <p>Delivering dependable troubleshooting for users and organizations.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Personal Details Dossier -->
+        <div class="personal-details-box glass-panel">
+          <div class="box-badge">Personal Dossier &amp; Quick Facts</div>
+          <div class="details-grid">
+            <div class="detail-item">
+              <span class="detail-label">Full Name</span>
+              <span class="detail-value text-white">Karan Sehra</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Location</span>
+              <span class="detail-value accent-green">Bulandshahr, Uttar Pradesh, India</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Field of Study</span>
+              <span class="detail-value text-white">Information Technology (IT)</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Course</span>
+              <span class="detail-value accent-red">ITI &mdash; ICTSM</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Current Semester</span>
+              <span class="detail-value accent-green">1st Semester (Active)</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Role / Specialization</span>
+              <span class="detail-value accent-red">Cyber Security Mentor</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Programming &amp; Markup</span>
+              <span class="detail-value text-white">HTML, C, C++, Ruby</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Contact Email</span>
+              <a href="mailto:kookoosharmaa@gmail.com" class="detail-value text-white link-hover">kookoosharmaa@gmail.com</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Education & Computer Courses Section -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-tag"><span class="accent-green">//</span> 02. ACADEMIC &amp; CERTIFICATIONS</div>
+          <h2 class="section-title">Education &amp; <span class="gradient-text">Courses</span></h2>
+          <div class="title-bar">
+            <span class="bar-segment green"></span>
+            <span class="bar-segment white"></span>
+            <span class="bar-segment red"></span>
+          </div>
+        </div>
+
+        <div class="edu-layout-grid">
+          
+          <!-- Column 1: Formal Education -->
+          <div class="edu-column">
+            <h3 class="col-title accent-red">Formal Education</h3>
+
+            <div class="timeline">
+              <!-- ITI ICTSM -->
+              <div class="timeline-item">
+                <div class="timeline-marker red-marker"></div>
+                <div class="timeline-card glass-panel">
+                  <div class="card-status-badge in-progress">
+                    <span class="pulse-dot"></span> In Progress &bull; 1st Semester
+                  </div>
+                  <h4 class="card-heading">ITI &mdash; ICTSM</h4>
+                  <p class="card-subheading">Information and Communication Technology System Maintenance</p>
+                  <div class="card-meta">
+                    <span class="meta-tag">Field: <strong>Information Technology</strong></span>
+                    <span class="meta-tag">Current: <strong>1st Semester</strong></span>
+                  </div>
+                  <p class="timeline-desc">
+                    Comprehensive vocational training covering computer hardware, peripheral installation, operating system configuration, networking fundamentals, and diagnostics.
+                  </p>
+                </div>
+              </div>
+
+              <!-- 12th Standard -->
+              <div class="timeline-item">
+                <div class="timeline-marker white-marker"></div>
+                <div class="timeline-card glass-panel">
+                  <div class="card-status-badge completed">Completed &bull; 2024</div>
+                  <h4 class="card-heading">12th Standard (Senior Secondary)</h4>
+                  <p class="card-subheading">Higher Secondary School</p>
+                  <div class="card-meta">
+                    <span class="meta-tag">Year of Completion: <strong>2024</strong></span>
+                  </div>
+                  <p class="timeline-desc">
+                    Built strong analytical thinking, mathematics, and problem-solving fundamentals.
+                  </p>
+                </div>
+              </div>
+
+              <!-- 10th Standard -->
+              <div class="timeline-item">
+                <div class="timeline-marker green-marker"></div>
+                <div class="timeline-card glass-panel">
+                  <div class="card-status-badge completed">Completed &bull; 2022</div>
+                  <h4 class="card-heading">10th Standard (Secondary)</h4>
+                  <p class="card-subheading">High School Board</p>
+                  <div class="card-meta">
+                    <span class="meta-tag">Year of Completion: <strong>2022</strong></span>
+                  </div>
+                  <p class="timeline-desc">
+                    Developed initial technical fascination for computers and science.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 2: Computer Courses -->
+          <div class="edu-column">
+            <h3 class="col-title accent-green">Professional Computer Courses</h3>
+
+            <div class="course-cards-container">
+              <!-- Basic Computer Course -->
+              <div class="course-card glass-panel red-border-glow">
+                <div class="course-badge red">Completion: March 2026</div>
+                <h4 class="course-title">Basic Computer Course</h4>
+                <div class="course-focus-box">
+                  <span class="focus-title">Focus:</span>
+                  <p class="focus-desc">Fundamental computer operations and digital literacy.</p>
+                </div>
+                <ul class="course-checklist">
+                  <li>&check; Core hardware &amp; component identification</li>
+                  <li>&check; Operating system navigation &amp; file management</li>
+                  <li>&check; Digital literacy, internet safety &amp; office tools</li>
+                </ul>
+              </div>
+
+              <!-- Advanced Computer Course -->
+              <div class="course-card glass-panel green-border-glow">
+                <div class="course-badge green">Completion: 2026</div>
+                <h4 class="course-title">Advanced Computer Course</h4>
+                <div class="course-focus-box">
+                  <span class="focus-title">Focus:</span>
+                  <p class="focus-desc">Advanced computer skills and practical IT knowledge.</p>
+                </div>
+                <ul class="course-checklist">
+                  <li>&check; Advanced system configurations &amp; troubleshooting</li>
+                  <li>&check; Practical IT tools, diagnostic utilities &amp; networking</li>
+                  <li>&check; Practical software maintenance &amp; system optimization</li>
+                </ul>
+              </div>
+
+              <!-- Continuous Training Banner -->
+              <div class="training-banner glass-panel">
+                <p><strong>Continuous Learning:</strong> Working persistently to combine vocational theory from ITI ICTSM with computer course certifications to build versatile real-world IT expertise.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Technical Interests & Skills Section -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-tag"><span class="accent-red">//</span> 03. SPECIALIZATIONS</div>
+          <h2 class="section-title">Technical <span class="gradient-text">Interests &amp; Skills</span></h2>
+          <div class="title-bar">
+            <span class="bar-segment red"></span>
+            <span class="bar-segment white"></span>
+            <span class="bar-segment green"></span>
+          </div>
+          <p class="section-subtitle">
+            Core areas of practical technical expertise, system maintenance, and emerging interests.
+          </p>
+        </div>
+
+        <div class="skills-cards-grid">
+          
+          <!-- Flagship Skill Card: Cyber Security Mentor -->
+          <div class="skill-card glass-panel cyber-security-card">
+            <div class="card-header-flex">
+              <div class="skill-tag red">Specialization &bull; Mentorship</div>
+              <span class="mentor-badge"><span class="pulse-dot-green"></span> ACTIVE MENTOR</span>
+            </div>
+            <h3 class="skill-title accent-glow-red">Cyber Security Mentor</h3>
+            <p class="skill-desc">
+              Dedicated cyber security mentor empowering students, peers, and tech enthusiasts with practical cyber safety awareness, ethical computing standards, and defense fundamentals. Mentoring on threat mitigation, malware protection, phishing prevention, system hardening, and building a proactive security-first mindset.
+            </p>
+            <div class="tags-container">
+              <span class="tag-highlight-red">Cyber Security Mentor</span>
+              <span class="tag-highlight-green">Threat Analysis</span>
+              <span class="tag-highlight-white">Ethical Awareness</span>
+              <span>System Hardening</span>
+              <span>Network Defense</span>
+              <span>Malware Mitigation</span>
+              <span>Digital Hygiene</span>
+            </div>
+          </div>
+
+          <!-- Skill Card: HTML Language -->
+          <div class="skill-card glass-panel">
+            <div class="skill-tag green">Web Markup</div>
+            <h3 class="skill-title">HTML (HyperText Markup)</h3>
+            <p class="skill-desc">
+              Structuring clean, semantic, and modern web interfaces using HTML5 standards. Proficient in accessible document layout, forms, responsive elements, and core web architecture.
+            </p>
+            <div class="tags-container">
+              <span class="tag-highlight-green">HTML5</span>
+              <span>Semantic Layout</span>
+              <span>Web Accessibility</span>
+              <span>DOM Structure</span>
+              <span>Forms &amp; Media</span>
+            </div>
+          </div>
+
+          <!-- Skill Card: C Language -->
+          <div class="skill-card glass-panel">
+            <div class="skill-tag red">Systems &amp; Logic</div>
+            <h3 class="skill-title">C Language</h3>
+            <p class="skill-desc">
+              Solid foundation in procedural programming, structured logic, pointer arithmetic, memory management, and understanding how software directly interacts with computer architecture.
+            </p>
+            <div class="tags-container">
+              <span class="tag-highlight-red">C Language</span>
+              <span>Pointers &amp; Memory</span>
+              <span>Data Structures</span>
+              <span>Algorithms</span>
+              <span>Systems Logic</span>
+            </div>
+          </div>
+
+          <!-- Skill Card: C++ Language -->
+          <div class="skill-card glass-panel">
+            <div class="skill-tag white">Object-Oriented</div>
+            <h3 class="skill-title">C++ Language</h3>
+            <p class="skill-desc">
+              Strong understanding of Object-Oriented Programming (OOP) principles, classes, inheritance, polymorphism, encapsulation, and developing efficient, high-performance applications.
+            </p>
+            <div class="tags-container">
+              <span class="tag-highlight-white">C++</span>
+              <span>OOP Architecture</span>
+              <span>Classes &amp; Objects</span>
+              <span>Templates &amp; STL</span>
+              <span>Performance</span>
+            </div>
+          </div>
+
+          <!-- Skill Card: Ruby Language -->
+          <div class="skill-card glass-panel">
+            <div class="skill-tag red">Scripting &amp; Automation</div>
+            <h3 class="skill-title">Ruby Language</h3>
+            <p class="skill-desc">
+              Dynamic, object-oriented scripting language with expressive syntax. Utilized for rapid automation scripts, text and log file processing, system utilities, and building custom tooling.
+            </p>
+            <div class="tags-container">
+              <span class="tag-highlight-red">Ruby</span>
+              <span>Dynamic Scripting</span>
+              <span>Task Automation</span>
+              <span>File &amp; Log Parsing</span>
+              <span>Security Scripts</span>
+            </div>
+          </div>
+
+          <!-- Card 1 -->
+          <div class="skill-card glass-panel">
+            <div class="skill-tag red">Hardware</div>
+            <h3 class="skill-title">Computer Hardware and Maintenance</h3>
+            <p class="skill-desc">
+              Assembly of desktop systems, testing RAM, storage drives, power supplies, motherboard diagnostics, and regular preventive physical maintenance.
+            </p>
+            <div class="tags-container">
+              <span>PC Assembly</span>
+              <span>Component Testing</span>
+              <span>Preventive Care</span>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="skill-card glass-panel">
+            <div class="skill-tag green">Diagnostics</div>
+            <h3 class="skill-title">Computer Troubleshooting</h3>
+            <p class="skill-desc">
+              Isolating hardware faults, fixing boot failures, driver incompatibilities, Blue Screen (BSOD) recovery, and software malfunction resolution.
+            </p>
+            <div class="tags-container">
+              <span>Fault Isolation</span>
+              <span>BSOD Fixes</span>
+              <span>OS Recovery</span>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="skill-card glass-panel">
+            <div class="skill-tag white">Support</div>
+            <h3 class="skill-title">IT Support and System Maintenance</h3>
+            <p class="skill-desc">
+              End-user technical support, configuring workstations, printer and scanner setup, basic network troubleshooting, and data backup procedures.
+            </p>
+            <div class="tags-container">
+              <span>Help Desk</span>
+              <span>Peripherals</span>
+              <span>System Backups</span>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="skill-card glass-panel">
+            <div class="skill-tag green">Systems</div>
+            <h3 class="skill-title">Information Technology</h3>
+            <p class="skill-desc">
+              Understanding IT infrastructure, LAN architectures, TCP/IP fundamentals, router/switch basics, and workplace IT best practices.
+            </p>
+            <div class="tags-container">
+              <span>LAN Setup</span>
+              <span>TCP/IP Basics</span>
+              <span>IT Protocols</span>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="skill-card glass-panel">
+            <div class="skill-tag red">Software</div>
+            <h3 class="skill-title">Software and Applications</h3>
+            <p class="skill-desc">
+              Proficient in Windows OS environments, utility applications, system diagnostic tools, remote assistance software, and productivity suites.
+            </p>
+            <div class="tags-container">
+              <span>Windows 10/11</span>
+              <span>Utilities</span>
+              <span>Remote Tools</span>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="skill-card glass-panel">
+            <div class="skill-tag white">Digital Tools</div>
+            <h3 class="skill-title">Digital Technology</h3>
+            <p class="skill-desc">
+              Modern digital tools, cloud storage solutions, device synchronization, internet protocols, and digital workflows for seamless communication.
+            </p>
+            <div class="tags-container">
+              <span>Cloud Drive</span>
+              <span>Digital Workflows</span>
+              <span>Data Sync</span>
+            </div>
+          </div>
+
+          <!-- Card 7 -->
+          <div class="skill-card glass-panel featured-skill-card">
+            <div class="skill-tag green">Next-Gen</div>
+            <h3 class="skill-title">Artificial Intelligence and Emerging Technologies</h3>
+            <p class="skill-desc">
+              Keen interest in exploring AI applications, automated troubleshooting tools, modern IT trends, and leveraging new technologies to solve daily problems.
+            </p>
+            <div class="tags-container">
+              <span>AI Tools</span>
+              <span>Automation</span>
+              <span>Tech Trends</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Career Objective Section -->
+    <section class="section objective-section" id="objective">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <div class="section-tag"><span class="accent-green">//</span> 04. CAREER OBJECTIVE &amp; VISION</div>
+          <h2 class="section-title">Career <span class="gradient-text">Objective</span></h2>
+          <div class="title-bar center-bar">
+            <span class="bar-segment red"></span>
+            <span class="bar-segment white"></span>
+            <span class="bar-segment green"></span>
+          </div>
+        </div>
+
+        <div class="objective-card-wrapper">
+          <div class="objective-card glass-panel">
+            <div class="objective-quote-mark">&ldquo;</div>
+            <h3 class="objective-highlight">
+              To build a successful career in Information Technology by developing practical expertise in computer systems, hardware maintenance, troubleshooting, and IT support.
+            </h3>
+            <p class="objective-body">
+              I aim to continuously expand my technical knowledge, gain hands-on experience, and contribute to technology-driven projects.
+            </p>
+            
+            <div class="objective-milestones">
+              <div class="milestone-box">
+                <div class="milestone-num red">01</div>
+                <h4>Skill Development</h4>
+                <p>Master practical computer hardware assembly, diagnosis, and component-level repairs.</p>
+              </div>
+              <div class="milestone-box">
+                <div class="milestone-num white">02</div>
+                <h4>IT Support Excellence</h4>
+                <p>Provide reliable technical troubleshooting and system maintenance in professional environments.</p>
+              </div>
+              <div class="milestone-box">
+                <div class="milestone-num green">03</div>
+                <h4>Continuous Innovation</h4>
+                <p>Adopt emerging IT tools, digital technologies, and AI solutions to solve real-world challenges.</p>
+              </div>
+            </div>
+
+            <div class="motto-box-inner">
+              <span class="motto-tag">PERSONAL MOTTO</span>
+              <p class="motto-quote">&ldquo;Learning technology, developing skills, and building a better future through continuous improvement.&rdquo;</p>
+              <span class="motto-author">&mdash; Karan Sehra</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact & Social Media Section -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-tag"><span class="accent-red">//</span> 05. CONTACT &amp; PROFILES</div>
+          <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+          <div class="title-bar">
+            <span class="bar-segment red"></span>
+            <span class="bar-segment white"></span>
+            <span class="bar-segment green"></span>
+          </div>
+          <p class="section-subtitle">
+            Let's connect! Reach out for IT support assistance, discussions on hardware &amp; tech, or professional inquiries.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Direct Contact Channels Column -->
+          <div class="contact-channels-col">
+            <h3 class="col-title accent-red">Direct Contact</h3>
+
+            <!-- Direct Phone -->
+            <a href="tel:+919548304900" class="contact-channel-card glass-panel" title="Click to call">
+              <div class="channel-icon red-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </div>
+              <div class="channel-details">
+                <span class="channel-label">Direct Phone</span>
+                <span class="channel-value">+91 95483 04900</span>
+                <span class="channel-action">Click to Dial &rarr;</span>
+              </div>
+            </a>
+
+            <!-- Direct Email -->
+            <a href="mailto:kookoosharmaa@gmail.com" class="contact-channel-card glass-panel" title="Click to send email">
+              <div class="channel-icon green-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div class="channel-details">
+                <span class="channel-label">Email Address</span>
+                <span class="channel-value">kookoosharmaa@gmail.com</span>
+                <span class="channel-action">Click to Email &rarr;</span>
+              </div>
+            </a>
+
+            <!-- Location -->
+            <div class="contact-channel-card glass-panel no-click">
+              <div class="channel-icon white-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div class="channel-details">
+                <span class="channel-label">Location / Base</span>
+                <span class="channel-value">Bulandshahr, Uttar Pradesh, India</span>
+                <span class="channel-action green-status">Available for Opportunities</span>
+              </div>
+            </div>
+
+            <!-- Current Academic Status Card -->
+            <div class="contact-channel-card glass-panel no-click">
+              <div class="channel-icon green-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+              </div>
+              <div class="channel-details">
+                <span class="channel-label">Academic Status</span>
+                <span class="channel-value">ITI &mdash; ICTSM (1st Semester)</span>
+                <span class="channel-action green-status">Open to IT Support &amp; Hardware Roles</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Media Profiles Column -->
+          <div class="socials-col">
+            <div class="socials-panel glass-panel">
+              <h3 class="col-title accent-green" style="margin-bottom: 16px;">Social Media Profiles</h3>
+              
+              <div class="social-links-grid">
+                <!-- Instagram 1: Legend Defaulter Baman -->
+                <a href="https://www.instagram.com/legend_defaulter_baman/" target="_blank" rel="noopener noreferrer" class="social-item">
+                  <div class="social-icon-box ig-real" title="Instagram">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                  </div>
+                  <div class="social-info">
+                    <span class="social-name">Legend Defaulter Baman</span>
+                    <span class="social-sub">@legend_defaulter_baman</span>
+                  </div>
+                  <span class="social-link-arrow">&nearr;</span>
+                </a>
+
+                <!-- Instagram 2: The Hacktips -->
+                <a href="https://www.instagram.com/the_hacktips/" target="_blank" rel="noopener noreferrer" class="social-item featured-social">
+                  <div class="social-icon-box ig-real" title="Instagram">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                  </div>
+                  <div class="social-info">
+                    <span class="social-name">The Hacktips</span>
+                    <span class="social-sub">@the_hacktips (Tech &amp; IT Tips)</span>
+                  </div>
+                  <span class="social-link-arrow">&nearr;</span>
+                </a>
+
+                <!-- Instagram 3: Adwik Sharma -->
+                <a href="https://www.instagram.com/adwiksharma__52/" target="_blank" rel="noopener noreferrer" class="social-item">
+                  <div class="social-icon-box ig-real" title="Instagram">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                  </div>
+                  <div class="social-info">
+                    <span class="social-name">Adwik Sharma</span>
+                    <span class="social-sub">@adwiksharma__52</span>
+                  </div>
+                  <span class="social-link-arrow">&nearr;</span>
+                </a>
+
+                <!-- Snapchat: Karan's Snapchat -->
+                <a href="https://www.snapchat.com/add/kookoosharmaa" target="_blank" rel="noopener noreferrer" class="social-item">
+                  <div class="social-icon-box sc-real" title="Snapchat">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12.001 2c-3.834 0-6.12 2.723-6.12 5.875 0 .61.082 1.348.243 1.954.12.449.03.626-.226.777-.525.311-1.233.72-1.724 1.258-.337.37-.215.717.269.845.894.237 1.62.628 1.957 1.411.385.89.043 1.834-.633 2.75-.369.5-.162.868.423.774 1.05-.169 1.968-.535 2.684.053.498.41.97.773 1.549.773.553 0 1.042-.363 1.542-.773.714-.588 1.634-.222 2.684-.053.585.094.792-.274.423-.774-.676-.916-1.018-1.86-.633-2.75.337-.783 1.063-1.174 1.957-1.411.484-.128.606-.475.269-.845-.491-.538-1.199-.947-1.724-1.258-.256-.151-.346-.328-.226-.777.161-.606.243-1.344.243-1.954 0-3.152-2.286-5.875-6.12-5.875z"/></svg>
+                  </div>
+                  <div class="social-info">
+                    <span class="social-name">Karan's Snapchat</span>
+                    <span class="social-sub">kookoosharmaa</span>
+                  </div>
+                  <span class="social-link-arrow">&nearr;</span>
+                </a>
+
+                <!-- Facebook: Facebook Profile -->
+                <a href="https://www.facebook.com/share/1Hf7snVj99/" target="_blank" rel="noopener noreferrer" class="social-item">
+                  <div class="social-icon-box fb-real" title="Facebook">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                  </div>
+                  <div class="social-info">
+                    <span class="social-name">Facebook Profile</span>
+                    <span class="social-sub">Karan Sehra on Facebook</span>
+                  </div>
+                  <span class="social-link-arrow">&nearr;</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <span class="footer-logo">KS</span>
+        <div>
+          <h4>Karan Sehra</h4>
+          <p>IT Student &bull; Bulandshahr, Uttar Pradesh, India</p>
+        </div>
+      </div>
+
+      <div class="footer-motto">
+        <p>&ldquo;Learning technology, developing skills, and building a better future through continuous improvement.&rdquo;</p>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">&copy; 2026 Karan Sehra. All rights reserved. Pure HTML, CSS &amp; JavaScript.</p>
+        <button class="back-to-top" id="back-to-top" title="Scroll to top">&#9650;</button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Notification Toast -->
+  <div id="toast" class="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
